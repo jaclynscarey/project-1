@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.name-div, .num-div, #main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 5vmin auto;
+}
+
+#main-container {
+    border: .5vmin solid black;
+    height: 70vmin;
+    width: 50vmin;
+}
+
+h1 {
+    margin: 5vmin auto;
+}
+
+input {
+    width: 20vmin;
+}
+
+button {
+    width: 15vmin;
+    height: 5vmin;
+    border-radius: 4vmin;
+    font-size: 2.5vmin;    
+}
