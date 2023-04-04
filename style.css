@@ -19,7 +19,10 @@
 }
 
 h1 {
-    margin: 5vmin auto;
+    padding: 2vmin;
+    margin: 5vmin 3vmin;
+    font-size: 4vmin;
+    text-align: center;
 }
 
 input {
@@ -31,4 +34,8 @@ button {
     height: 5vmin;
     border-radius: 4vmin;
     font-size: 2.5vmin;    
+}
+
+label {
+    font-size: 3vmin;
 }
