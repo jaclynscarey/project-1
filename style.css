@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.name-div, .num-div, #main-container {
+.name-div, .num-div, #main-container, #home-div {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -14,7 +14,7 @@
 
 #main-container {
     border: .5vmin solid black;
-    height: 70vmin;
+    height: 90vmin;
     width: 50vmin;
 }
 
@@ -27,6 +27,9 @@ h1 {
 
 input {
     width: 20vmin;
+    height: 5vmin;
+    font-size: 2.25vmin;
+    padding: .5vmin;
 }
 
 button {
