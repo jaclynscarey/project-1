@@ -1,5 +1,5 @@
 // constants
-const questionBank = [
+const questionsBank = [
     {
         question: 'What is the name of the first president of the United State?',
         choices: {
@@ -21,7 +21,7 @@ const questionBank = [
         answer: 'b'
     },
     {
-        question: 'How many inches as in 6 feet?',
+        question: 'How many inches are in 6 feet?',
         choices: {
             a: '72 inches',
             b: '6 inches',
@@ -51,20 +51,33 @@ let score;
 
 
 // cached elements
-const nameInputEl = document.getElementByIdI('name-input');
+const nameInputEl = document.getElementById('name-input');
 const numInputEl = document.getElementById('num-input');
 const playBtn = document.querySelector('button');
 
 // event listeners
+playBtn.addEventListener('click', initialize);
 
 // functions
 initialize ();
 
 function initialize() {
-    playerName = '';
-    numOfQuestions = 0;
+    playerName = nameInputEl.value;
+    numOfQuestions = numInputEl.value;
     currentQuestions = [];
     score = 0;
+   
+}
 
+function randomize(questions) {
+    let index = questionsBank.length;
+    let randomIndex;
+    while (index !== 0) {
+        randomIndex = Math.floor(Math.random() * index);
+        console.log(randomIndex);
+        index--;
+        [questions[index], questions[randomIndex]] = [questions[randomIndex], questions[index]];
+    }
+    return questions;
 }
 
