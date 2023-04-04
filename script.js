@@ -40,6 +40,176 @@ const questionsBank = [
         },
         answer: 'b'
     },
+    {
+        question: '4',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '5',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '6',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '7',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '8',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '9',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '10',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '11',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '12',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '13',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '14',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '15',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '16',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '17',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '18',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '19',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
+    {
+        question: '20',
+        choices: {
+            a: '13',
+            b: '50',
+            c: '27',
+            d: '36'
+        },
+        answer: 'b'
+    },
 
 ];
 
@@ -66,9 +236,11 @@ function initialize() {
     numOfQuestions = numInputEl.value;
     currentQuestions = [];
     score = 0;
+
    
 }
 
+// randomize() shuffles all questions in questionsBank array
 function randomize(questions) {
     let index = questionsBank.length;
     let randomIndex;
@@ -79,5 +251,10 @@ function randomize(questions) {
         [questions[index], questions[randomIndex]] = [questions[randomIndex], questions[index]];
     }
     return questions;
+}
+
+// questionsPicker() chooses user's requested # of questions from randomize()
+function questionsPicker() {
+
 }
 
