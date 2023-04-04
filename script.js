@@ -716,6 +716,9 @@ let newChoice2El;
 let newChoice3El;
 let newChoice4El;
 let nextBtn;
+let newUlEl;
+let warningEl;
+let warningMsgEl;
 
 
 
@@ -742,10 +745,35 @@ function initialize() {
     randomQuestions = [];
     position = 0;
 }
+
 // takes player input and starts game
 function play() {
     playerName = nameInputEl.value;
     numOfQuestions = numInputEl.value;
+  
+    if (playerName === '' || numOfQuestions <= 0 || numOfQuestions > 70) {
+        if (playerName === ''){
+            nameInputEl.classList = 'focus';
+        } else {
+            nameInputEl.classList = '';
+        }
+        if (numOfQuestions <= 0 || numOfQuestions > 70) {
+            numInputEl.classList = 'focus';
+        } else {
+            numInputEl.classList = '';
+        }
+
+        if (warningEl === undefined) {
+            invalidInput();
+            return;
+        } 
+        warningEl.remove();
+        invalidInput();
+        return;
+    } else if (warningEl !== undefined) {
+        warningEl.remove();
+    }
+    
     nameInputEl.value = '';
     numInputEl.value = '';
     // document.getElementById('home-div').style.visibility = "hidden";
@@ -756,10 +784,10 @@ function play() {
     console.log('position: ' + position);
     console.log('current questions: ' + currentQuestions);
     document.getElementById('name-label').remove();
-    document.getElementById('name-input').remove();
+    nameInputEl.remove();
     document.getElementById('name-div').remove();
     document.getElementById('num-label').remove();
-    document.getElementById('num-input').remove();
+    numInputEl.remove();
     document.getElementById('num-div').remove();
 
     playBtn.remove();
@@ -767,11 +795,22 @@ function play() {
     createNewLayout();
 }
 
+function invalidInput() {
+    warningEl = document.createElement('div');
+    warningEl.classList = 'warning-box';
+    mainContainerEl.appendChild(warningEl);
+    warningMsgEl = document.createElement('span');
+    warningMsgEl.classList = 'warning-msg';
+    warningMsgEl.innerText = 'Invalid Input\n Try again'
+    warningEl.append(warningMsgEl);
+}
+
 function nextQuestion() {
     if (position < numOfQuestions) {
         position++;
         console.log('position: ' + position);
         newQuestionEl.remove();
+        newUlEl.remove();
         newChoice1El.remove();
         newChoice2El.remove();
         newChoice3El.remove();
@@ -788,21 +827,29 @@ function createNewLayout() {
     newQuestionEl.innerText = currentQuestions[position-1].question;
     homeDivEl.appendChild(newQuestionEl);
 
-    newChoice1El = document.createElement('h3');
+    newUlEl = document.createElement('ul');
+    newUlEl.classList = 'choice';
+    homeDivEl.appendChild(newUlEl);
+
+    newChoice1El = document.createElement('li');
+    newChoice1El.classList = 'choice';
     newChoice1El.innerText = currentQuestions[position-1].choices.a;
-    homeDivEl.appendChild(newChoice1El);
+    newUlEl.appendChild(newChoice1El);
 
-    newChoice2El = document.createElement('h3');
+    newChoice2El = document.createElement('li');
+    newChoice2El.classList = 'choice';
     newChoice2El.innerText = currentQuestions[position-1].choices.b;
-    homeDivEl.appendChild(newChoice2El);
+    newUlEl.appendChild(newChoice2El);
 
-    newChoice3El = document.createElement('h3');
+    newChoice3El = document.createElement('li');
+    newChoice3El.classList = 'choice';
     newChoice3El.innerText = currentQuestions[position-1].choices.c;
-    homeDivEl.appendChild(newChoice3El);
+    newUlEl.appendChild(newChoice3El);
 
-    newChoice4El = document.createElement('h3');
+    newChoice4El = document.createElement('li');
+    newChoice4El.classList = 'choice';
     newChoice4El.innerText = currentQuestions[position-1].choices.d;
-    homeDivEl.appendChild(newChoice4El);
+    newUlEl.appendChild(newChoice4El);
 
     nextBtn = document.createElement('button');
     nextBtn.innerText = 'Next';
