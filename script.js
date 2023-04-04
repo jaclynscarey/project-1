@@ -1,215 +1,705 @@
 // constants
 const questionsBank = [
     {
-        question: 'What is the name of the first president of the United State?',
+        question: 'What is the capital of Australia?',
         choices: {
-            a: 'Bill Clinton',
-            b: 'Thomas Edison',
-            c: 'George Washington',
-            d: 'Christopher Columbus'
+            a: 'Sydney',
+            b: 'Melbourne',
+            c: 'Brisbane',
+            d: 'Canberra'
         },
-        answer: 'c'
+        answer: 'd'
     },
     {
-        question: 'What is the square root of 81?',
+        question: 'Which country is both in Europe and Asia?',
         choices: {
-            a: '7',
-            b: '9',
-            c: '8',
-            d: '5'
-        },
-        answer: 'b'
-    },
-    {
-        question: 'How many inches are in 6 feet?',
-        choices: {
-            a: '72 inches',
-            b: '6 inches',
-            c: '60 inches',
-            d: '50 inches'
+            a: 'Russia',
+            b: 'China',
+            c: 'India',
+            d: 'Iran'
         },
         answer: 'a'
     },
     {
-        question: 'How many states are in the USA?',
+        question: 'Who painted the Mona Lisa?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Vincent van Gogh',
+            b: 'Pablo Picasso',
+            c: 'Leonardo da Vinci',
+            d: 'Rembrandt'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the smallest planet in the solar system?',
+        choices: {
+            a: 'Mercury',
+            b: 'Mars',
+            c: 'Venus',
+            d: 'Earth'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'Which continent is the largest by area?',
+        choices: {
+            a: 'Europe',
+            b: 'Africa',
+            c: 'Asia',
+            d: 'South America'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the smallest country in the world?',
+        choices: {
+            a: 'Vatican City',
+            b: 'Monaco',
+            c: 'San Marino',
+            d: 'Liechtenstein'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the largest organ in the human body?',
+        choices: {
+            a: 'Heart',
+            b: 'Brain',
+            c: 'Liver',
+            d: 'Skin'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the currency used in Japan?',
+        choices: {
+            a: 'Dollar',
+            b: 'Yuan',
+            c: 'Euro',
+            d: 'Yen'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'Which gas makes up the largest percentage of Earth’s atmosphere?',
+        choices: {
+            a: 'Oxygen',
+            b: 'Carbon dioxide',
+            c: 'Nitrogen',
+            d: 'Hydrogen'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'Which river is the longest in the world?',
+        choices: {
+            a: 'Nile',
+            b: 'Amazon',
+            c: 'Yangtze',
+            d: 'Mississippi'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the largest mammal in the world?',
+        choices: {
+            a: 'Elephant',
+            b: 'Giraffe',
+            c: 'Hippopotamus',
+            d: 'Blue whale'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the largest desert in the world?',
+        choices: {
+            a: 'Sahara',
+            b: 'Gobi',
+            c: 'Arabian',
+            d: 'Antarctic'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'Who wrote the novel “To Kill a Mockingbird”?',
+        choices: {
+            a: 'Ernest Hemingway',
+            b: 'Harper Lee',
+            c: 'F. Scott Fitzgerald',
+            d: 'William Faulk'
         },
         answer: 'b'
     },
     {
-        question: '4',
+        question: 'What is the name of the largest ocean in the world?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Atlantic',
+            b: 'Pacific',
+            c: 'Indian',
+            d: 'Arctic'
         },
         answer: 'b'
     },
     {
-        question: '5',
+        question: 'What is the name of the largest animal on Earth?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Giraffe',
+            b: 'Blue whale',
+            c: 'Elephant',
+            d: 'Hippopotamus'
         },
         answer: 'b'
     },
     {
-        question: '6',
+        question: 'What is the highest mountain in Africa?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Mount Kilimanjaro',
+            b: 'Mount Everest',
+            c: 'Mount Elbrus',
+            d: 'Mount Denali'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest waterfall in the world?',
+        choices: {
+            a: 'Niagara Falls',
+            b: 'Angel Falls',
+            c: 'Victoria Falls',
+            d: 'Iguazu Falls'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the ship that Charles Darwin sailed on his famous voyage?',
+        choices: {
+            a: 'HMS Endeavour',
+            b: 'HMS Victory',
+            c: 'HMS Beagle',
+            d: 'HMS Challenger'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the smallest planet in the solar system?',
+        choices: {
+            a: 'Mars',
+            b: 'Venus',
+            c: 'Mercury',
+            d: 'Neptune'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'Who wrote the novel “1984”?',
+        choices: {
+            a: 'George Orwell',
+            b: 'Ernest Hemingway',
+            c: 'Jane Austen',
+            d: 'William Faulkner'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the highest mountain in North America?',
+        choices: {
+            a: 'Mount Kilimanjaro',
+            b: 'Mount Everest',
+            c: 'Mount Elbrus',
+            d: 'Mount Denali'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the largest lake in Africa?',
+        choices: {
+            a: 'Lake Victoria',
+            b: 'Lake Tanganyika',
+            c: 'Lake Malawi',
+            d: 'Lake Chad'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest reef system in the world?',
+        choices: {
+            a: 'Great Barrier Reef',
+            b: 'Florida Reef',
+            c: 'Belize Barrier Reef',
+            d: 'Maldives Coral Reef'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the smallest continent in the world?',
+        choices: {
+            a: 'Europe',
+            b: 'South America',
+            c: 'Antarctica',
+            d: 'Australia'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the smallest bird in the world?',
+        choices: {
+            a: 'Hummingbird',
+            b: 'Parakeet',
+            c: 'Robin',
+            d: 'Penguin'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'Which country is the largest by area?',
+        choices: {
+            a: 'Russia',
+            b: 'Canada',
+            c: 'China',
+            d: 'United States'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the longest river in the world?',
+        choices: {
+            a: 'Amazon',
+            b: 'Nile',
+            c: 'Yangtze',
+            d: 'Mississippi'
         },
         answer: 'b'
     },
     {
-        question: '7',
+        question: 'Who is credited with discovering penicillin?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Alexander Fleming',
+            b: 'Marie Curie',
+            c: 'Albert Einstein',
+            d: 'Isaac Newton'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the highest waterfall in the United States?',
+        choices: {
+            a: 'Niagara Falls',
+            b: 'Yosemite Falls',
+            c: 'Angel Falls',
+            d: 'Victoria Falls'
         },
         answer: 'b'
     },
     {
-        question: '8',
+        question: 'What is the name of the largest desert in the world?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Sahara',
+            b: 'Gobi',
+            c: 'Arabian',
+            d: 'Mojave'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest island in the world?',
+        choices: {
+            a: 'Greenland',
+            b: 'Madagascar',
+            c: 'Borneo',
+            d: 'New Guinea'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest country in South America?',
+        choices: {
+            a: 'Brazil',
+            b: 'Argentina',
+            c: 'Colombia',
+            d: 'Peru'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest country in Africa?',
+        choices: {
+            a: 'Nigeria',
+            b: 'Egypt',
+            c: 'South Africa',
+            d: 'Algeria'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the smallest country in the world?',
+        choices: {
+            a: 'Monaco',
+            b: 'Nauru',
+            c: 'Vatican City',
+            d: 'San Marino'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'Who was the first person to walk on the moon?',
+        choices: {
+            a: 'Neil Armstrong',
+            b: 'Buzz Aldrin',
+            c: 'Yuri Gagarin',
+            d: 'Alan Shepard'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest stadium in the world?',
+        choices: {
+            a: 'Wembley Stadium',
+            b: 'Camp Nou',
+            c: 'Rungrado 1st of May Stadium',
+            d: 'Santiago Bernabeu'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'Who is the current Prime Minister of Canada?',
+        choices: {
+            a: 'Justin Trudeau',
+            b: 'Andrew Scheer',
+            c: 'Jagmeet Singh',
+            d: 'Erin O’Toole'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the capital of Indonesia?',
+        choices: {
+            a: 'Jakarta',
+            b: 'Bali',
+            c: 'Surabaya',
+            d: 'Bandung'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest lake in Africa?',
+        choices: {
+            a: 'Lake Victoria',
+            b: 'Lake Tanganyika',
+            c: 'Lake Malawi',
+            d: 'Lake Chad'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the highest mountain in Africa?',
+        choices: {
+            a: 'Kilimanjaro',
+            b: 'Mount Kenya',
+            c: 'Mount Meru',
+            d: 'Mount Elgon'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the only continent that lies entirely within the Southern Hemisphere?',
+        choices: {
+            a: 'North America',
+            b: 'South America',
+            c: 'Europe',
+            d: 'Australia'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the famous street in San Francisco that is known for its steep hills?',
+        choices: {
+            a: 'Broadway',
+            b: 'Lombard Street',
+            c: 'Market Street',
+            d: 'Van Ness Avenue'
         },
         answer: 'b'
     },
     {
-        question: '9',
+        question: 'What is the name of the largest fish in the world?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Great white shark',
+            b: 'Blue whale',
+            c: 'Giant squid',
+            d: 'Whale shark'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the smallest bird in the world?',
+        choices: {
+            a: 'Hummingbird',
+            b: 'Wren',
+            c: 'Goldcrest',
+            d: 'Bee hummingbird'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the first man to climb Mount Everest?',
+        choices: {
+            a: 'Tenzing Norgay',
+            b: 'Edmund Hillary',
+            c: 'Reinhold Messner',
+            d: 'Maurice Herzog'
         },
         answer: 'b'
     },
     {
-        question: '10',
+        question: 'What is the name of the largest organ in the human body?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Brain',
+            b: 'Heart',
+            c: 'Liver',
+            d: 'Skin'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the largest city in South Korea?',
+        choices: {
+            a: 'Seoul',
+            b: 'Busan',
+            c: 'Incheon',
+            d: 'Daegu'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest river in South America?',
+        choices: {
+            a: 'Amazon',
+            b: 'Orinoco',
+            c: 'Magdalena',
+            d: 'Paraguay'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest bird in the world?',
+        choices: {
+            a: 'Emu',
+            b: 'Ostrich',
+            c: 'Cassowary',
+            d: 'Albatross'
         },
         answer: 'b'
     },
     {
-        question: '11',
+        question: 'What is the product of 7 and 8?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: '15',
+            b: '56',
+            c: '64',
+            d: '72'
         },
         answer: 'b'
     },
     {
-        question: '12',
+        question: 'What is the quotient of 27 and 9?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: '2',
+            b: '3',
+            c: '6',
+            d: '9'
         },
         answer: 'b'
     },
     {
-        question: '13',
+        question: 'What is the sum of 1/3 and 2/5?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: '5/15',
+            b: '7/15',
+            c: '11/15',
+            d: '15/35'
         },
         answer: 'b'
     },
     {
-        question: '14',
+        question: 'What is the difference between 15 and 8?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
+            a: '7',
+            b: '8',
+            c: '15',
+            d: '23'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the area of a rectangle with length 5 and width 7?',
+        choices: {
+            a: '12',
+            b: '25',
+            c: '35',
+            d: '40'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the perimeter of a square with sides of length 6?',
+        choices: {
+            a: '12',
+            b: '18',
+            c: '24',
             d: '36'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the value of 7 squared?',
+        choices: {
+            a: '14',
+            b: '21',
+            c: '35',
+            d: '49'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the value of 25 divided by 5?',
+        choices: {
+            a: '2',
+            b: '5',
+            c: '10',
+            d: '15'
         },
         answer: 'b'
     },
     {
-        question: '15',
+        question: 'What is the value of 3 to the power of 4?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: '7',
+            b: '9',
+            c: '12',
+            d: '81'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the value of 8 times 4 plus 2?',
+        choices: {
+            a: '26',
+            b: '32',
+            c: '34',
+            d: '40'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the value of 10 minus 3 plus 6?',
+        choices: {
+            a: '3',
+            b: '7',
+            c: '10',
+            d: '13'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the hero in "Terminator 2: Judgment Day"?',
+        choices: {
+            a: 'Kyle Reese',
+            b: 'John Connor',
+            c: 'The Terminator',
+            d: 'Sarah Connor'
         },
         answer: 'b'
     },
     {
-        question: '16',
+        question: 'What is the title of the 1990 film starring Johnny Depp about a man with scissor blades for hands?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Edward Scissorhands',
+            b: 'The Nightmare Before Christmas',
+            c: 'Benny & Joon',
+            d: 'What\'s Eating Gilbert Grape'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'In what city does "Home Alone 2: Lost in New York" take place?',
+        choices: {
+            a: 'Chicago',
+            b: 'Boston',
+            c: 'Los Angeles',
+            d: 'New York'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What 1994 film did Quentin Tarantino write and direct, featuring a non-linear storyline and multiple intersecting plotlines?',
+        choices: {
+            a: 'Pulp Fiction',
+            b: 'Reservoir Dogs',
+            c: 'True Romance',
+            d: 'Natural Born Killers'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the villain in "The Lion King"?',
+        choices: {
+            a: 'Scar',
+            b: 'Zazu',
+            c: 'Mufasa',
+            d: 'Simba'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'In what year was "Forrest Gump" released?',
+        choices: {
+            a: '1991',
+            b: '1994',
+            c: '1997',
+            d: '2000'
         },
         answer: 'b'
     },
     {
-        question: '17',
+        question: 'What is the name of the computer program that Neo must fight in "The Matrix"?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'The Terminator',
+            b: 'The Oracle',
+            c: 'The Architect',
+            d: 'Agent Smith'
         },
-        answer: 'b'
+        answer: 'd'
     },
     {
-        question: '18',
+        question: 'What is the name of the dog in "The Mask"?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Buddy',
+            b: 'Max',
+            c: 'Oscar',
+            d: 'Milo'
         },
-        answer: 'b'
+        answer: 'd'
     },
     {
-        question: '19',
+        question: 'What 1997 film tells the story of a young woman who travels back in time to meet her mother as a teenager, and accidentally disrupts her parents\' first meeting?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Back to the Future',
+            b: 'The Time Traveler\'s Wife',
+            c: 'The Butterfly Effect',
+            d: 'Kate & Leopold'
         },
-        answer: 'b'
+        answer: 'd'
     },
     {
-        question: '20',
+        question: 'What is the name of the clown in "It"?',
         choices: {
-            a: '13',
-            b: '50',
-            c: '27',
-            d: '36'
+            a: 'Pennywise',
+            b: 'Bozo',
+            c: 'Krusty',
+            d: 'Ronald McDonald'
         },
-        answer: 'b'
-    },
+        answer: 'a'
+    }
 
 ];
 
@@ -234,6 +724,7 @@ const nameInputEl = document.getElementById('name-input');
 const numInputEl = document.getElementById('num-input');
 const playBtn = document.getElementById('play-button');
 const mainContainerEl = document.getElementById('main-container');
+const homeDivEl = document.getElementById('home-div');
 
 
 // event listeners
@@ -257,46 +748,68 @@ function play() {
     numOfQuestions = numInputEl.value;
     nameInputEl.value = '';
     numInputEl.value = '';
-    document.getElementById('home-div').style.visibility = "hidden";
-    document.getElementById('home-div').style.height = '0px';
+    // document.getElementById('home-div').style.visibility = "hidden";
+    // document.getElementById('home-div').style.height = '0px';
     randomQuestions = randomize(questionsBank);
     currentQuestions = questionsPicker(randomQuestions);
     position++;
+    console.log('position: ' + position);
+    console.log('current questions: ' + currentQuestions);
+    document.getElementById('name-label').remove();
+    document.getElementById('name-input').remove();
+    document.getElementById('name-div').remove();
+    document.getElementById('num-label').remove();
+    document.getElementById('num-input').remove();
+    document.getElementById('num-div').remove();
+
+    playBtn.remove();
+
     createNewLayout();
 }
 
 function nextQuestion() {
-    position++;
-    createNewLayout();
-
+    if (position < numOfQuestions) {
+        position++;
+        console.log('position: ' + position);
+        newQuestionEl.remove();
+        newChoice1El.remove();
+        newChoice2El.remove();
+        newChoice3El.remove();
+        newChoice4El.remove();
+        nextBtn.remove();
+        createNewLayout();
+    }
+    return;
 }
 
 function createNewLayout() {
     newQuestionEl = document.createElement('h2');
     newQuestionEl.classList = `question-${position}`;
     newQuestionEl.innerText = currentQuestions[position-1].question;
-    mainContainerEl.appendChild(newQuestionEl);
+    homeDivEl.appendChild(newQuestionEl);
 
     newChoice1El = document.createElement('h3');
     newChoice1El.innerText = currentQuestions[position-1].choices.a;
-    mainContainerEl.appendChild(newChoice1El);
+    homeDivEl.appendChild(newChoice1El);
 
     newChoice2El = document.createElement('h3');
     newChoice2El.innerText = currentQuestions[position-1].choices.b;
-    mainContainerEl.appendChild(newChoice2El);
+    homeDivEl.appendChild(newChoice2El);
 
     newChoice3El = document.createElement('h3');
     newChoice3El.innerText = currentQuestions[position-1].choices.c;
-    mainContainerEl.appendChild(newChoice3El);
+    homeDivEl.appendChild(newChoice3El);
 
     newChoice4El = document.createElement('h3');
     newChoice4El.innerText = currentQuestions[position-1].choices.d;
-    mainContainerEl.appendChild(newChoice4El);
+    homeDivEl.appendChild(newChoice4El);
 
     nextBtn = document.createElement('button');
     nextBtn.innerText = 'Next';
-    mainContainerEl.appendChild(nextBtn);
+    homeDivEl.appendChild(nextBtn);
     nextBtn.addEventListener('click', nextQuestion);
+
+    console.log('current questions: ' + currentQuestions[position-1])
 }
 
 // randomize() shuffles all questions in questionsBank array
