@@ -12,7 +12,6 @@
     align-items: center;
     grid-row: span 1;
     margin: 0 auto;
-    /* margin: 5vmin auto; */
 }
 
 #home-div {
@@ -31,9 +30,9 @@
 }
 
 #main-container {
-    margin: 10vmin auto;
+    margin: 8vmin auto;
     border: .5vmin solid black;
-    height: 85vmin;
+    height: 75vmin;
     width: 55vmin;
     display: grid;
     grid-template-rows: 1fr 4fr;
@@ -116,4 +115,12 @@ li:hover {
     max-width: 40vmin;
     margin: auto;
     font-size: 3vmin;
+}
+
+p {
+    max-width: 45vmin;
+    margin: -5vmin auto;
+    font-size: 3vmin;
+    text-align: center;
+
 }
