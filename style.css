@@ -5,35 +5,45 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#name-div, #num-div, #main-container{    
+#name-div, #num-div {    
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin: 5vmin auto;
+    grid-row: span 1;
+    margin: 0 auto;
+    /* margin: 5vmin auto; */
 }
 
 #home-div {
-    height: 75vmin;
+    grid-row: span 4;
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-#name-div, #num-div, button{
-    grid-row: span 1;
+
+#play-button, .next {
+    grid-row: span .5;
     margin: 0 auto;
 }
 
+.next {
+    margin-top: 2vmin;
+}
 
 #main-container {
+    margin: 10vmin auto;
     border: .5vmin solid black;
-    height: 90vmin;
-    width: 50vmin;
+    height: 85vmin;
+    width: 55vmin;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
 }
 
 h1 {
-    padding: 2vmin;
-    margin: 5vmin 3vmin;
+    grid-row: span 1;
+    /* padding: 2vmin; */
+    margin: 5vmin auto;
+    max-width: 45vmin;
     font-size: 4vmin;
     text-align: center;
 }
@@ -54,20 +64,26 @@ button {
 
 label {
     font-size: 3vmin;
-    width: 37vmin;
+    max-width: 40vmin;
     height: auto;
     text-align: center;
-    margin: 2vmin auto;
+    margin-bottom: 2vmin;
+}
+
+ul {
+    margin: auto;
 }
 
 li {
     list-style: none;
+    padding: 1vmin;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5vmin;
 }
 
-li.choice {
-    padding: 1vmin;
-    margin: 1vmin auto;
-    text-align: center;
+li:hover {
+    color: dodgerblue;
 }
 
 .warning-box {
@@ -93,4 +109,11 @@ li.choice {
 .focus {
     border: 0.5vmin solid rgb(237, 81, 81);
     background-color: rgba(255, 0, 0, 0.123);
+}
+
+.question {
+    text-align: center;
+    max-width: 40vmin;
+    margin: auto;
+    font-size: 3vmin;
 }
