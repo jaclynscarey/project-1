@@ -518,7 +518,7 @@ const questionsBank = [
             c: '11/15',
             d: '15/35'
         },
-        answer: 'b'
+        answer: 'c'
     },
     {
         question: 'What is the difference between 15 and 8?',
@@ -719,6 +719,7 @@ let nextBtn;
 let newUlEl;
 let warningEl;
 let warningMsgEl;
+let answer;
 
 
 
@@ -780,7 +781,7 @@ function play() {
     currentQuestions = questionsPicker(randomQuestions);
     position++;
     console.log('position: ' + position);
-    console.log('current questions: ' + currentQuestions);
+    // console.log('current questions: ' + currentQuestions);
     document.getElementById('name-label').remove();
     nameInputEl.remove();
     document.getElementById('name-div').remove();
@@ -849,16 +850,27 @@ function createNewLayout() {
     newChoice4El.innerText = currentQuestions[position-1].choices.d;
     newUlEl.appendChild(newChoice4El);
 
-    // nextBtn = document.createElement('button');
-    // nextBtn.innerText = 'Next';
-    // nextBtn.classList = 'next';
-    // homeDivEl.appendChild(nextBtn);
-    // nextBtn.addEventListener('click', nextQuestion);
+    nextBtn = document.createElement('button');
+    nextBtn.innerText = 'Next';
+    nextBtn.classList = 'next';
+    homeDivEl.appendChild(nextBtn);
+    nextBtn.addEventListener('click', nextQuestion);
 
-    console.log('current questions: ' + currentQuestions[position-1])
+    answer = currentQuestions[position-1].answer;
+    console.log('Answer is: ' + answer);
+
+    newUlEl.addEventListener('click', checkAnswer);
+    // console.log('current questions: ' + currentQuestions[position-1])
 }
 
-
+function checkAnswer (event){
+    console.log(event.target.className);
+    if(event.target.className === answer) {
+        console.log("that's correct");
+    } else {
+        console.log("that's incorrect");
+    }
+}
 
 // randomize() shuffles all questions in questionsBank array
 function randomize(randomQuestions) {
@@ -879,7 +891,3 @@ function questionsPicker() {
     }
     return currentQuestions;
 }
-
-document.querySelector('ul').addEventListener('click', function (evt){
-    console.log(evt.target);
-});
