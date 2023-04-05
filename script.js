@@ -776,8 +776,6 @@ function play() {
     
     nameInputEl.value = '';
     numInputEl.value = '';
-    // document.getElementById('home-div').style.visibility = "hidden";
-    // document.getElementById('home-div').style.height = '0px';
     randomQuestions = randomize(questionsBank);
     currentQuestions = questionsPicker(randomQuestions);
     position++;
@@ -823,7 +821,7 @@ function nextQuestion() {
 
 function createNewLayout() {
     newQuestionEl = document.createElement('h2');
-    newQuestionEl.classList = `question-${position}`;
+    newQuestionEl.classList = 'question';
     newQuestionEl.innerText = currentQuestions[position-1].question;
     homeDivEl.appendChild(newQuestionEl);
 
@@ -832,32 +830,35 @@ function createNewLayout() {
     homeDivEl.appendChild(newUlEl);
 
     newChoice1El = document.createElement('li');
-    newChoice1El.classList = 'choice';
+    newChoice1El.classList = 'a';
     newChoice1El.innerText = currentQuestions[position-1].choices.a;
     newUlEl.appendChild(newChoice1El);
 
     newChoice2El = document.createElement('li');
-    newChoice2El.classList = 'choice';
+    newChoice2El.classList = 'b';
     newChoice2El.innerText = currentQuestions[position-1].choices.b;
     newUlEl.appendChild(newChoice2El);
 
     newChoice3El = document.createElement('li');
-    newChoice3El.classList = 'choice';
+    newChoice3El.classList = 'c';
     newChoice3El.innerText = currentQuestions[position-1].choices.c;
     newUlEl.appendChild(newChoice3El);
 
     newChoice4El = document.createElement('li');
-    newChoice4El.classList = 'choice';
+    newChoice4El.classList = 'd';
     newChoice4El.innerText = currentQuestions[position-1].choices.d;
     newUlEl.appendChild(newChoice4El);
 
-    nextBtn = document.createElement('button');
-    nextBtn.innerText = 'Next';
-    homeDivEl.appendChild(nextBtn);
-    nextBtn.addEventListener('click', nextQuestion);
+    // nextBtn = document.createElement('button');
+    // nextBtn.innerText = 'Next';
+    // nextBtn.classList = 'next';
+    // homeDivEl.appendChild(nextBtn);
+    // nextBtn.addEventListener('click', nextQuestion);
 
     console.log('current questions: ' + currentQuestions[position-1])
 }
+
+
 
 // randomize() shuffles all questions in questionsBank array
 function randomize(randomQuestions) {
@@ -879,3 +880,6 @@ function questionsPicker() {
     return currentQuestions;
 }
 
+document.querySelector('ul').addEventListener('click', function (evt){
+    console.log(evt.target);
+});
