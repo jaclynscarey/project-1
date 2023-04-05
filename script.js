@@ -729,6 +729,8 @@ const numInputEl = document.getElementById('num-input');
 const playBtn = document.getElementById('play-button');
 const mainContainerEl = document.getElementById('main-container');
 const homeDivEl = document.getElementById('home-div');
+let scoreEl = document.createElement('p');
+
 
 
 // event listeners
@@ -816,6 +818,9 @@ function nextQuestion() {
         newChoice4El.remove();
         nextBtn.remove();
         createNewLayout();
+        scoreEl.remove();
+        renderScore();
+
     }
     return;
 }
@@ -850,12 +855,6 @@ function createNewLayout() {
     newChoice4El.innerText = currentQuestions[position-1].choices.d;
     newUlEl.appendChild(newChoice4El);
 
-    nextBtn = document.createElement('button');
-    nextBtn.innerText = 'Next';
-    nextBtn.classList = 'next';
-    homeDivEl.appendChild(nextBtn);
-    nextBtn.addEventListener('click', nextQuestion);
-
     answer = currentQuestions[position-1].answer;
     console.log('Answer is: ' + answer);
 
@@ -863,13 +862,40 @@ function createNewLayout() {
     // console.log('current questions: ' + currentQuestions[position-1])
 }
 
+function renderNextBtn() {
+    nextBtn = document.createElement('button');
+    nextBtn.innerText = 'Next';
+    nextBtn.classList = 'next';
+    homeDivEl.appendChild(nextBtn);
+    nextBtn.addEventListener('click', nextQuestion);
+
+}
+
+function renderScore() {
+    scoreEl.innerHTML = `Hi ${playerName}! You've answered <b><em>${score}</em></b> out of <b><em>${numOfQuestions}</em></b> questions correctly.`;
+    document.querySelector('body').append(scoreEl);
+}
+
 function checkAnswer (event){
-    console.log(event.target.className);
-    if(event.target.className === answer) {
-        console.log("that's correct");
+    let target = event.target;
+    let className = target.className;
+
+
+    if(className === answer) {
+        document.querySelector(`li.${className}`).innerHTML = `${questionsBank[position-1].choices[`${answer}`]}<span style="color: green"> CORRECT</span>`;
+        newUlEl.removeEventListener('click', checkAnswer);
+        score++;
+        renderNextBtn();
+        renderScore();  
+        return;
     } else {
-        console.log("that's incorrect");
-    }
+        document.querySelector(`li.${className}`).innerHTML = `${questionsBank[position-1].choices[`${className}`]}<span style="color: red"> INCORRECT</span>`;
+        document.querySelector(`li.${answer}`).innerHTML = `${questionsBank[position-1].choices[`${answer}`]}<span style="color: green"> CORRECT</span>`;
+        newUlEl.removeEventListener('click', checkAnswer);
+        renderNextBtn();
+        renderScore();  
+        return;
+    }  
 }
 
 // randomize() shuffles all questions in questionsBank array
