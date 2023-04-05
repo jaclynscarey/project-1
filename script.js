@@ -1263,6 +1263,7 @@ function renderScore() {
     document.querySelector('body').append(scoreEl);
 }
 
+// removes the question, choices, button, and score elements
 function clearQuestions() {
     newQuestionEl.remove();
     newUlEl.remove();
@@ -1316,9 +1317,8 @@ function playAgain() {
     playAgainBtn.classList = 'play-again';
     homeDivEl.appendChild(playAgainBtn);
     playAgainBtn.addEventListener('click', reload);
-
 }
-
+// reloads the page
 function reload(){
     location.reload();
 }
