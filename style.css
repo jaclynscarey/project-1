@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgb(206, 206, 206);
+}
+
 #name-div, #num-div {    
     display: flex;
     flex-direction: column;
@@ -29,23 +33,32 @@
     margin-top: 2vmin;
 }
 
+main {
+    border: 2vmin dotted purple;
+    margin: 5vmin auto;
+    width: 67vmin;
+    height: 83vmin;
+}
+
 #main-container {
-    margin: 8vmin auto;
-    border: .5vmin solid black;
+    margin: 2vmin auto;
     height: 75vmin;
     width: 55vmin;
     display: grid;
     grid-template-rows: 1fr 4fr;
     position: relative;
+    background-color: rgb(255, 255, 255);
+
 }
 
 h1 {
     grid-row: span 1;
-    /* padding: 2vmin; */
     margin: 5vmin auto;
     max-width: 45vmin;
     font-size: 4vmin;
     text-align: center;
+    color: purple;
+    text-shadow: .175vmin .175vmin rgb(62, 62, 62);
 }
 
 input {
@@ -60,6 +73,9 @@ button {
     height: 5vmin;
     border-radius: 4vmin;
     font-size: 2.5vmin;
+    background-color: purple;
+    color: white;
+    font-weight: bolder;
 }
 
 label {
