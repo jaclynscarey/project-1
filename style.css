@@ -36,6 +36,7 @@
     width: 55vmin;
     display: grid;
     grid-template-rows: 1fr 4fr;
+    position: relative;
 }
 
 h1 {
@@ -89,13 +90,15 @@ li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    position:absolute;
+    text-align: center;    
+    position: absolute;
+    top: 40%;
+    left: 27%;
     height: 8vmin;
     width: 25vmin;
     background-color: rgba(255, 0, 0, 0.833);
     border: .5vmin outset red;
-    margin: 41.5vmin auto 0;
+
 }
 
 .warning-msg {
