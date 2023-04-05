@@ -699,7 +699,367 @@ const questionsBank = [
             d: 'Ronald McDonald'
         },
         answer: 'a'
-    }
+    },
+    {
+        question: 'Who wrote the Harry Potter series of books?',
+        choices: {
+            a: 'J.K. Rowling',
+            b: 'Stephenie Meyer',
+            c: 'Suzanne Collins',
+            d: 'Veronica Roth'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the capital of Canada?',
+        choices: {
+            a: 'Toronto',
+            b: 'Ottawa',
+            c: 'Montreal',
+            d: 'Vancouver'
+        },
+        answer: 'b'
+    },
+    {
+        question: 'What is the largest planet in our solar system?',
+        choices: {
+            a: 'Venus',
+            b: 'Mars',
+            c: 'Jupiter',
+            d: 'Saturn'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the tallest mountain in the world?',
+        choices: {
+            a: 'Mount Kilimanjaro',
+            b: 'Mount Everest',
+            c: 'Mount Denali',
+            d: 'Mount Fuji'
+        },
+        answer: 'b'
+    },
+    {
+        question: 'Who was the first person to walk on the moon?',
+        choices: {
+            a: 'Neil Armstrong',
+            b: 'Buzz Aldrin',
+            c: 'Yuri Gagarin',
+            d: 'John Glenn'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the largest ocean in the world?',
+        choices: {
+            a: 'Atlantic Ocean',
+            b: 'Indian Ocean',
+            c: 'Pacific Ocean',
+            d: 'Arctic Ocean'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the instrument that is played by blowing into it?',
+        choices: {
+            a: 'Piano',
+            b: 'Trumpet',
+            c: 'Drums',
+            d: 'Guitar'
+        },
+        answer: 'b'
+    },
+    {
+        question: 'What is the name of the process by which plants make food?',
+        choices: {
+            a: 'Photosynthesis',
+            b: 'Respiration',
+            c: 'Evaporation',
+            d: 'Transpiration'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the toy company that produces the Lego building blocks?',
+        choices: {
+            a: 'Mattel',
+            b: 'Hasbro',
+            c: 'Lego Group',
+            d: 'Mega Brands'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'Who was the first U.S. President?',
+        choices: {
+            a: 'George Washington',
+            b: 'Thomas Jefferson',
+            c: 'Abraham Lincoln',
+            d: 'John F. Kennedy'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the author of "Charlotte\'s Web"?',
+        choices: {
+            a: 'E.B. White',
+            b: 'C.S. Lewis',
+            c: 'J.K. Rowling',
+            d: 'L. Frank Baum'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the animal that is the symbol of the United States?',
+        choices: {
+            a: 'Bald eagle',
+            b: 'Lion',
+            c: 'Tiger',
+            d: 'Gorilla'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the device used to see distant objects?',
+        choices: {
+            a: 'Binoculars',
+            b: 'Telescope',
+            c: 'Microscope',
+            d: 'Magnifying glass'
+        },
+        answer: 'b'
+    },
+    {
+        question: 'What is the name of the capital city of Japan?',
+        choices: {
+            a: 'Tokyo',
+            b: 'Kyoto',
+            c: 'Osaka',
+            d: 'Sapporo'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the biggest desert in the world?',
+        choices: {
+            a: 'Sahara',
+            b: 'Gobi',
+            c: 'Arabian',
+            d: 'Kalahari'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the smallest planet in our solar system?',
+        choices: {
+            a: 'Mars',
+            b: 'Venus',
+            c: 'Mercury',
+            d: 'Pluto'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the largest land animal in the world?',
+        choices: {
+            a: 'Giraffe',
+            b: 'Elephant',
+            c: 'Hippopotamus',
+            d: 'Rhinoceros'
+        },
+        answer: 'b'
+    },
+    {
+        question: 'What is the name of the instrument that is played by hitting it?',
+        choices: {
+            a: 'Piano',
+            b: 'Trumpet',
+            c: 'Drums',
+            d: 'Guitar'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the device that measures temperature?',
+        choices: {
+            a: 'Ruler',
+            b: 'Thermometer',
+            c: 'Barometer',
+            d: 'Altimeter'
+        },
+        answer: 'b'
+    },
+    {
+        question: 'What is the name of the process by which water changes from a liquid to a gas?',
+        choices: {
+            a: 'Melting',
+            b: 'Freezing',
+            c: 'Boiling',
+            d: 'Condensation'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the toy company that produces Barbie dolls?',
+        choices: {
+            a: 'Mattel',
+            b: 'Hasbro',
+            c: 'Lego Group',
+            d: 'Mega Brands'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the musical instrument that is played with a bow?',
+        choices: {
+            a: 'Trumpet',
+            b: 'Guitar',
+            c: 'Violin',
+            d: 'Piano'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the part of a plant that makes seeds?',
+        choices: {
+            a: 'Flower',
+            b: 'Stem',
+            c: 'Root',
+            d: 'Leaf'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the animal that is known for its black and white stripes?',
+        choices: {
+            a: 'Zebra',
+            b: 'Hippo',
+            c: 'Raccoon',
+            d: 'Panda'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the force that makes objects fall to the ground?',
+        choices: {
+            a: 'Magnetism',
+            b: 'Gravity',
+            c: 'Electricity',
+            d: 'Wind'
+        },
+        answer: 'b'
+    },
+    {
+        question: 'Which planet is closest to the sun?',
+        choices: {
+            a: 'Mars',
+            b: 'Jupiter',
+            c: 'Venus',
+            d: 'Saturn'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the smallest continent by land area?',
+        choices: {
+            a: 'Africa',
+            b: 'Europe',
+            c: 'Asia',
+            d: 'Australia'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the organ that pumps blood throughout the body?',
+        choices: {
+            a: 'Brain',
+            b: 'Liver',
+            c: 'Heart',
+            d: 'Lungs'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the smallest unit of matter?',
+        choices: {
+            a: 'Atom',
+            b: 'Molecule',
+            c: 'Cell',
+            d: 'Nucleus'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the term for a word that has the opposite meaning of another word?',
+        choices: {
+            a: 'Synonym',
+            b: 'Homophone',
+            c: 'Antonym',
+            d: 'Rhyme'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the device that changes sound into an electrical signal?',
+        choices: {
+            a: 'Microphone',
+            b: 'Speaker',
+            c: 'Amplifier',
+            d: 'Recorder'
+        },
+        answer: 'a'
+    },
+    {
+        question: 'What is the name of the instrument used to measure wind speed?',
+        choices: {
+            a: 'Thermometer',
+            b: 'Barometer',
+            c: 'Anemometer',
+            d: 'Hygrometer'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'Which of the following is a mammal: snake, frog, whale, or lizard?',
+        choices: {
+            a: 'Snake',
+            b: 'Frog',
+            c: 'Whale',
+            d: 'Lizard'
+        },
+        answer: 'c'
+    },
+    {
+        question: 'What is the name of the smallest particle of an element that has the properties of that element?',
+        choices: {
+            a: 'Proton',
+            b: 'Neutron',
+            c: 'Electron',
+            d: 'Atom'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the term for a word that sounds like the thing it describes?',
+        choices: {
+            a: 'Simile',
+            b: 'Metaphor',
+            c: 'Personification',
+            d: 'Onomatopoeia'
+        },
+        answer: 'd'
+    },
+    {
+        question: 'What is the name of the process by which plants make their own food?',
+        choices: {
+            a: 'Photosynthesis',
+            b: 'Respiration',
+            c: 'Fermentation',
+            d: 'Combustion'
+        },
+        answer: 'a'
+    },
 
 ];
 
@@ -711,15 +1071,16 @@ let score;
 let randomQuestions;
 let position;
 let newQuestionEl;
+let newUlEl;
 let newChoice1El;
 let newChoice2El;
 let newChoice3El;
 let newChoice4El;
+let answer;
 let nextBtn;
-let newUlEl;
 let warningEl;
 let warningMsgEl;
-let answer;
+let playAgainBtn;
 
 
 
@@ -754,13 +1115,15 @@ function play() {
     playerName = nameInputEl.value;
     numOfQuestions = numInputEl.value;
   
-    if (playerName === '' || numOfQuestions <= 0 || numOfQuestions > 70) {
+    // checks if input fields are empty of out of bound
+    // displays warning if true
+    if (playerName === '' || numOfQuestions <= 0 || numOfQuestions > 50) {
         if (playerName === ''){
             nameInputEl.classList = 'focus';
         } else {
             nameInputEl.classList = '';
         }
-        if (numOfQuestions <= 0 || numOfQuestions > 70) {
+        if (numOfQuestions <= 0 || numOfQuestions > 50) {
             numInputEl.classList = 'focus';
         } else {
             numInputEl.classList = '';
@@ -782,8 +1145,6 @@ function play() {
     randomQuestions = randomize(questionsBank);
     currentQuestions = questionsPicker(randomQuestions);
     position++;
-    console.log('position: ' + position);
-    // console.log('current questions: ' + currentQuestions);
     document.getElementById('name-label').remove();
     nameInputEl.remove();
     document.getElementById('name-div').remove();
@@ -796,6 +1157,7 @@ function play() {
     createNewLayout();
 }
 
+// creates warning
 function invalidInput() {
     warningEl = document.createElement('div');
     warningEl.classList = 'warning-box';
@@ -806,25 +1168,27 @@ function invalidInput() {
     warningEl.append(warningMsgEl);
 }
 
-function nextQuestion() {
-    if (position < numOfQuestions) {
-        position++;
-        console.log('position: ' + position);
-        newQuestionEl.remove();
-        newUlEl.remove();
-        newChoice1El.remove();
-        newChoice2El.remove();
-        newChoice3El.remove();
-        newChoice4El.remove();
-        nextBtn.remove();
-        createNewLayout();
-        scoreEl.remove();
-        renderScore();
-
+// shuffles all questions in questionsBank array
+function randomize(randomQuestions) {
+    let index = questionsBank.length;
+    let randomIndex;
+    while (index !== 0) {
+        randomIndex = Math.floor(Math.random() * index);
+        index--;
+        [randomQuestions[index], randomQuestions[randomIndex]] = [randomQuestions[randomIndex], randomQuestions[index]];        
     }
-    return;
+    return randomQuestions;
 }
 
+// loads # of questions chosen by the user to currenQuestions array
+function questionsPicker() {
+    for (let i = 0; i < numOfQuestions; i++) {
+        currentQuestions.push(randomQuestions[i]);
+    }
+    return currentQuestions;
+}
+
+// generates elements for new question and answers
 function createNewLayout() {
     newQuestionEl = document.createElement('h2');
     newQuestionEl.classList = 'question';
@@ -856,31 +1220,16 @@ function createNewLayout() {
     newUlEl.appendChild(newChoice4El);
 
     answer = currentQuestions[position-1].answer;
-    console.log('Answer is: ' + answer);
 
+    // adds even delegation to 'ul' elements (multiple choice)
     newUlEl.addEventListener('click', checkAnswer);
-    // console.log('current questions: ' + currentQuestions[position-1])
 }
 
-function renderNextBtn() {
-    nextBtn = document.createElement('button');
-    nextBtn.innerText = 'Next';
-    nextBtn.classList = 'next';
-    homeDivEl.appendChild(nextBtn);
-    nextBtn.addEventListener('click', nextQuestion);
-
-}
-
-function renderScore() {
-    scoreEl.innerHTML = `Hi ${playerName}! You've answered <b><em>${score}</em></b> out of <b><em>${numOfQuestions}</em></b> questions correctly.`;
-    document.querySelector('body').append(scoreEl);
-}
-
+// handles event from clicking on newULEl 
 function checkAnswer (event){
-    let target = event.target;
-    let className = target.className;
+    let className = event.target.className;
 
-
+    // checks if selected answer is correct
     if(className === answer) {
         document.querySelector(`li.${className}`).innerHTML = `${questionsBank[position-1].choices[`${answer}`]}<span style="color: green"> CORRECT</span>`;
         newUlEl.removeEventListener('click', checkAnswer);
@@ -898,22 +1247,78 @@ function checkAnswer (event){
     }  
 }
 
-// randomize() shuffles all questions in questionsBank array
-function randomize(randomQuestions) {
-    let index = questionsBank.length;
-    let randomIndex;
-    while (index !== 0) {
-        randomIndex = Math.floor(Math.random() * index);
-        index--;
-        [randomQuestions[index], randomQuestions[randomIndex]] = [randomQuestions[randomIndex], randomQuestions[index]];
-    }
-    return randomQuestions;
+// creates "next" button and adds event listener to it
+function renderNextBtn() {
+    nextBtn = document.createElement('button');
+    nextBtn.innerText = 'Next';
+    nextBtn.classList = 'next';
+    homeDivEl.appendChild(nextBtn);
+    nextBtn.addEventListener('click', nextQuestion);
+
 }
 
-// questionsPicker() chooses user's requested # of questions from randomize()
-function questionsPicker() {
-    for (let i = 0; i < numOfQuestions; i++) {
-        currentQuestions.push(randomQuestions[i]);
+// renders score message to the screen
+function renderScore() {
+    scoreEl.innerHTML = `Hey ${playerName}! You've answered <b><em>${score}</em></b> out of <b><em>${numOfQuestions}</em></b> questions correctly.`;
+    document.querySelector('body').append(scoreEl);
+}
+
+function clearQuestions() {
+    newQuestionEl.remove();
+    newUlEl.remove();
+    newChoice1El.remove();
+    newChoice2El.remove();
+    newChoice3El.remove();
+    newChoice4El.remove();
+    nextBtn.remove();
+    scoreEl.remove();
+
+    return;
+}
+
+// removes old question and answers from screen and invokes new layout
+function nextQuestion() {
+    
+    if (position < numOfQuestions) {
+        position++;
+        clearQuestions();
+        createNewLayout();
+        renderScore();        
+    } else if (position == numOfQuestions) {
+        clearQuestions();
+        let grade = score/numOfQuestions*100;
+        let gradeRnd = Math.round(grade);     
+        scoreEl.innerHTML = `You've answered <b><em>${score}</em></b> out of <b><em>${numOfQuestions}</em></b> questions correctly.<br><br>That's ${gradeRnd}% correct!`;
+        scoreEl.classList = 'congrats-msg'
+        homeDivEl.append(scoreEl);
+        let finalMsg = document.createElement('h4');
+        if (grade >= 90) {
+            finalMsg.innerHTML = `<span class="emphasize">Great job!<br>You're almost as<br>smart as ChatGPT.</span><br><br>Would you like to play again?`
+            homeDivEl.append(finalMsg);
+        } else if (grade >= 75) {
+            finalMsg.innerHTML = `<span class="emphasize">Not too bad!<br>ChatGPT is still smarter than you.</span><br><br>Would you like to play again?`
+            homeDivEl.append(finalMsg);
+        } else if (grade >= 55) {
+            finalMsg.innerHTML = `<span class="emphasize">You could benefit from reading a book.<br>ChatGPT is way smarter than you.</span><br><br>Would you like to play again?`
+            homeDivEl.append(finalMsg);
+        } else {
+            finalMsg.innerHTML = `<span class="emphasize">You uncultured swine!<br>Do you even know what ChatGPT is?!?.</span><br><br>Would you like to play again?`
+            homeDivEl.append(finalMsg);
+        }   
+        playAgain();
     }
-    return currentQuestions;
+}
+
+// creates "play again" button and adds event listener to it
+function playAgain() {
+    playAgainBtn = document.createElement('button');
+    playAgainBtn.innerText = 'Play Again';
+    playAgainBtn.classList = 'play-again';
+    homeDivEl.appendChild(playAgainBtn);
+    playAgainBtn.addEventListener('click', reload);
+
+}
+
+function reload(){
+    location.reload();
 }
