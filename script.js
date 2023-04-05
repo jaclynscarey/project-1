@@ -1277,14 +1277,16 @@ function clearQuestions() {
     return;
 }
 
-// removes old question and answers from screen and invokes new layout
 function nextQuestion() {
     
+    // removes old question and answers from screen and invokes new layout
     if (position < numOfQuestions) {
         position++;
         clearQuestions();
         createNewLayout();
-        renderScore();        
+        renderScore();
+        
+    // clears screen, calculates score and renders final message based on score
     } else if (position == numOfQuestions) {
         clearQuestions();
         let grade = score/numOfQuestions*100;
@@ -1318,6 +1320,7 @@ function playAgain() {
     homeDivEl.appendChild(playAgainBtn);
     playAgainBtn.addEventListener('click', reload);
 }
+
 // reloads the page
 function reload(){
     location.reload();
