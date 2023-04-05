@@ -20,12 +20,12 @@
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-#play-button, .next {
+#play-button, .next , .play-again{
     grid-row: span .5;
     margin: 0 auto;
 }
 
-.next {
+.next, .play-again {
     margin-top: 2vmin;
 }
 
@@ -124,3 +124,17 @@ p {
     text-align: center;
 
 }
+
+p.congrats-msg, h4 {
+    max-width: 45vmin;
+    margin: auto;
+    font-size: 3vmin;
+    text-align: center;
+    grid-row: span 1;
+}
+
+.emphasize {
+    font-weight: bolder;
+    font-size: 4vmin;
+}
+
