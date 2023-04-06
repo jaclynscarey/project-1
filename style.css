@@ -64,26 +64,25 @@ h1 {
 .neonText {
     color: white;
     text-shadow:
-      0 0 7px purple,
-      0 0 10px purple,
-      0 0 21px purple,
-      0 0 42px purple,
-      0 0 82px purple,
-      0 0 92px purple,
-      0 0 102px purple,
-      0 0 151px purple;
+      0 0 .5vmin purple,
+      0 0 .75vmin purple,
+      0 0 2vmin purple,
+      0 0 5vmin purple,
+      0 0 8vmin purple,
+      0 0 11vmin purple,
+      0 0 14vmin purple,
+      0 0 17vmin purple;
 }
 
 .score-msg {
-    margin-top: 3vmin
     font-weight: bolder;
     font-size: 3.25vmin;
     color: white;
     text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+   -.13vmin -.13vmin 0 #000,  
+    .13vmin -.13vmin 0 #000,
+    -.13vmin .13vmin 0 #000,
+    .13vmin .13vmin 0 #000;
 }
 
 input {
