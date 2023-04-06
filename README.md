@@ -1,5 +1,6 @@
-                                                          Trivia Game
-                                                Are You Smarter Than ChatGPT???
+  <h3 align="center">Trivia Game</h3>
+  <h1 align="center">Are You Smarter Than ChatGPT???</h1>
+                                   
                                                 
 ------------------------------------------
 <details>
@@ -24,11 +25,17 @@ Questions are randomly selected from a pool of 106 questions with each new game.
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/109121563/230237076-2321caf9-d604-4987-ba31-ec5149b2de16.png" width="300px">
-<img src="https://user-images.githubusercontent.com/109121563/230237715-27475de7-dea6-4fe6-9da3-8f5ee948ed6d.png" width="300px">
-<img src="https://user-images.githubusercontent.com/109121563/230238001-869342df-f53d-49c1-8bea-33faa3b9478b.png" width="300px">
-<img src="https://user-images.githubusercontent.com/109121563/230239815-bc0820d6-03e3-4953-aeb9-061bfc350378.png" width="300px">
-<img src="https://user-images.githubusercontent.com/109121563/230240626-0529ece8-ad2e-4b8c-a0ec-725faa90eced.png" width="300px"><br>
+<img align="left" src="https://user-images.githubusercontent.com/109121563/230237076-2321caf9-d604-4987-ba31-ec5149b2de16.png" width="480px">
+<img align="right" src="https://user-images.githubusercontent.com/109121563/230237715-27475de7-dea6-4fe6-9da3-8f5ee948ed6d.png" width="480px"><br>
+
+<hr>
+
+<img align="left" src="https://user-images.githubusercontent.com/109121563/230238001-869342df-f53d-49c1-8bea-33faa3b9478b.png" width="480px">
+<img align="right" src="https://user-images.githubusercontent.com/109121563/230239815-bc0820d6-03e3-4953-aeb9-061bfc350378.png" width="480px"><br>
+
+<hr>
+
+<img align="center" src="https://user-images.githubusercontent.com/109121563/230240626-0529ece8-ad2e-4b8c-a0ec-725faa90eced.png" width="480px">
 
 
 ## Technologies Used
