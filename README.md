@@ -32,6 +32,8 @@ Questions are randomly selected from a pool of 106 questions with each new game.
 
                                                        Getting Started
 ------------------------------------------
+
+Play Now: https://trivia-game.jaclyncarey.com
                                               
 - The player will input their name in the main screen and the number of questions they wish to answer.
 - A question and 4 multiple choices are rendered on the screen, of which the player must select 1.
