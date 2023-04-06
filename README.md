@@ -11,6 +11,7 @@
     <li><a href="#technologies-used">Technologies Used</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#next-steps">Next Steps</a></li>
+    <li><a href="#credits">Credits</a></li>
   </ol>
 </details>
 
@@ -89,3 +90,10 @@ Play Now: https://trivia-game.jaclyncarey.com
 - Night mode
 
 ------------------------------------------
+
+## Credits
+
+Credit to ChatGPT for generating my questions bank:
+
+<img align="center" src="https://user-images.githubusercontent.com/109121563/230443621-8e023698-405c-4f34-a2bd-65be156689ce.png">
+
