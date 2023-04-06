@@ -1177,7 +1177,6 @@ function randomize(randomQuestions) {
     return randomQuestions;
 }
 
-
 // loads # of questions chosen by the user to currenQuestions array
 function questionsPicker() {
     for (let i = 0; i < numOfQuestions; i++) {
