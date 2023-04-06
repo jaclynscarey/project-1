@@ -5,6 +5,12 @@
 <img src="https://user-images.githubusercontent.com/109121563/230237076-2321caf9-d604-4987-ba31-ec5149b2de16.png" width="400px"><br><br>
 - A question and 4 multiple choices are rendered on the screen, of which the player must select 1.<br><br>
 <img src="https://user-images.githubusercontent.com/109121563/230237715-27475de7-dea6-4fe6-9da3-8f5ee948ed6d.png" width="400px"><br><br>
-- If the correct answer is selected, a CORRECT message will appear along with the current score.<br><br>
+- If the correct answer is selected, a CORRECT message will appear along with the current score and a next button.<br><br>
 <img src="https://user-images.githubusercontent.com/109121563/230238001-869342df-f53d-49c1-8bea-33faa3b9478b.png" width="400px"><br><br>
-
+- If the incorrect answer is selected, the following will render:<br>
+    - an INCORRECT message<br>
+    - the correct answer<br>
+    - next button<br>
+    - current score<br><br>
+   
+<img src="https://user-images.githubusercontent.com/109121563/230239815-bc0820d6-03e3-4953-aeb9-061bfc350378.png" width="400px"><br><br>
