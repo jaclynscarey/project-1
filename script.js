@@ -1170,15 +1170,13 @@ function invalidInput() {
 
 // shuffles all questions in questionsBank array
 function randomize(randomQuestions) {
-    let index = questionsBank.length;
-    let randomIndex;
-    while (index !== 0) {
-        randomIndex = Math.floor(Math.random() * index);
-        index--;
-        [randomQuestions[index], randomQuestions[randomIndex]] = [randomQuestions[randomIndex], randomQuestions[index]];        
+    for (let i = questionsBank.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i - 1));
+        [questionsBank[i], questionsBank[j]] = [questionsBank[j], questionsBank[i]];
     }
     return randomQuestions;
 }
+
 
 // loads # of questions chosen by the user to currenQuestions array
 function questionsPicker() {
