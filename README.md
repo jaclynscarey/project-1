@@ -54,3 +54,12 @@ Play Now: https://trivia-game.jaclyncarey.com
 ------------------------------------------
                                                       
                                                       
+                                                        Next Steps
+
+------------------------------------------
+
+- Add timer to each question
+- Pick questions by topic
+- Night mode
+
+------------------------------------------
