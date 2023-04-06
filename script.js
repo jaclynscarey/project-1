@@ -1091,6 +1091,8 @@ const playBtn = document.getElementById('play-button');
 const mainContainerEl = document.getElementById('main-container');
 const homeDivEl = document.getElementById('home-div');
 let scoreEl = document.createElement('p');
+let audio = document.createElement('audio');
+
 
 
 
@@ -1229,6 +1231,7 @@ function checkAnswer (event){
     // checks if selected answer is correct
     if(className === answer) {
         document.querySelector(`li.${className}`).innerHTML = `${questionsBank[position-1].choices[`${answer}`]}<span style="color: green"> CORRECT</span>`;
+        clap();
         newUlEl.removeEventListener('click', checkAnswer);
         score++;
         renderNextBtn();
@@ -1237,6 +1240,7 @@ function checkAnswer (event){
     } else {
         document.querySelector(`li.${className}`).innerHTML = `${questionsBank[position-1].choices[`${className}`]}<span style="color: red"> INCORRECT</span>`;
         document.querySelector(`li.${answer}`).innerHTML = `${questionsBank[position-1].choices[`${answer}`]}<span style="color: green"> CORRECT</span>`;
+        boo();
         newUlEl.removeEventListener('click', checkAnswer);
         renderNextBtn();
         renderScore();  
@@ -1321,4 +1325,16 @@ function playAgain() {
 // reloads the page
 function reload(){
     location.reload();
+}
+
+// creates and plays clapping audio
+function clap(){
+    audio.setAttribute("src", "./clap.mp3");
+    return audio.play();
+}
+
+// creates and plays booing audio
+function boo(){
+    audio.setAttribute("src", "./boo.mp3");
+    return audio.play();
 }
