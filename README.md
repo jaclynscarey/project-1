@@ -30,19 +30,14 @@ The game's layout is responsive, which makes it possible to be played on desktop
 <table>
 <tbody>
 <tr>
-<td>&nbsp;<img src="https://user-images.githubusercontent.com/109121563/230237076-2321caf9-d604-4987-ba31-ec5149b2de16.png" width="250px"><br>
-</td>
-<td>&nbsp;<img src="https://user-images.githubusercontent.com/109121563/230237715-27475de7-dea6-4fe6-9da3-8f5ee948ed6d.png" width="250px"><br>
-</td>
-<td>&nbsp;<img src="https://user-images.githubusercontent.com/109121563/230238001-869342df-f53d-49c1-8bea-33faa3b9478b.png" width="250px"><br>
-</td>
+<td><img src="https://user-images.githubusercontent.com/109121563/230508287-a0efcd1b-8ccc-47c9-acdb-edca8e2554a7.png" width="250px"></td>
+<td><img src="https://user-images.githubusercontent.com/109121563/230508412-a70363e2-2af1-47e5-99be-352711d603cc.png" width="250px"></td>
+<td><img src="https://user-images.githubusercontent.com/109121563/230508474-50220681-757f-4492-80cd-2fbec83ca69b.png" width="250px"></td>
 </tr>
 <tr>
-<td>&nbsp;<img src="https://user-images.githubusercontent.com/109121563/230239815-bc0820d6-03e3-4953-aeb9-061bfc350378.png" width="250px"><br>
-</td>
-<td>&nbsp;<img src="https://user-images.githubusercontent.com/109121563/230240626-0529ece8-ad2e-4b8c-a0ec-725faa90eced.png" width="250px"><br><br>
-</td>
-<td>&nbsp;</td>
+<td><img src="https://user-images.githubusercontent.com/109121563/230508520-41f7258f-706a-4268-a7ed-913d311f9cd5.png" width="250px"></td>
+<td><img src="https://user-images.githubusercontent.com/109121563/230508561-212c5a83-080e-4a81-870b-90cf6c6d0b84.png" width="250px"></td>
+<td><img src="https://user-images.githubusercontent.com/109121563/230508625-b7f4be43-6788-420f-b347-97680aa9ebee.png" width="250px"></td>
 </tr>
 </tbody>
 </table>
@@ -87,7 +82,6 @@ Play Now: https://trivia-game.jaclyncarey.com
 
 - Add timer to each question
 - Pick questions by topic
-- Night mode
 
 ------------------------------------------
 
