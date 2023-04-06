@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: rgb(206, 206, 206);
+    background-size: cover;
+    background-image: url(./files/imgs/background.jpg);
 }
 
 #name-div, #num-div {    
@@ -34,10 +35,10 @@ body {
 }
 
 main {
-    border: 2vmin dotted purple;
-    margin: 5vmin auto;
+    border: 2vmin dotted rgb(194, 1, 194);
+    margin: 4vmin auto;
     width: 67vmin;
-    height: 83vmin;
+    height: 83vmin;    
 }
 
 #main-container {
@@ -47,18 +48,42 @@ main {
     display: grid;
     grid-template-rows: 1fr 4fr;
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.779);
 
 }
 
 h1 {
+    font-family: 'Tilt Neon', cursive;
     grid-row: span 1;
     margin: 5vmin auto;
     max-width: 45vmin;
-    font-size: 4vmin;
+    font-size: 6vmin;
     text-align: center;
-    color: purple;
-    text-shadow: .175vmin .175vmin rgb(62, 62, 62);
+}
+
+.neonText {
+    color: white;
+    text-shadow:
+      0 0 7px purple,
+      0 0 10px purple,
+      0 0 21px purple,
+      0 0 42px purple,
+      0 0 82px purple,
+      0 0 92px purple,
+      0 0 102px purple,
+      0 0 151px purple;
+}
+
+.score-msg {
+    margin-top: 3vmin
+    font-weight: bolder;
+    font-size: 3.25vmin;
+    color: white;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 input {
@@ -80,6 +105,7 @@ button {
 
 label {
     font-size: 3vmin;
+    font-weight: bold;
     max-width: 40vmin;
     height: auto;
     text-align: center;
@@ -99,7 +125,7 @@ li {
 }
 
 li:hover {
-    color: dodgerblue;
+    color: rgb(205, 0, 205);
 }
 
 .warning-box {
@@ -134,14 +160,18 @@ li:hover {
     max-width: 40vmin;
     margin: auto;
     font-size: 3vmin;
+    font-weight: bolder;
+}
+
+.choice {
+    font-weight: bold;
 }
 
 p {
     max-width: 45vmin;
-    margin: -5vmin auto;
+    margin: -4vmin auto;
     font-size: 3vmin;
     text-align: center;
-
 }
 
 p.congrats-msg, h4 {

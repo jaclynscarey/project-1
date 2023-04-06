@@ -1260,6 +1260,7 @@ function renderNextBtn() {
 
 // renders score message to the screen
 function renderScore() {
+    scoreEl.className = "score-msg";
     scoreEl.innerHTML = `Hey ${playerName}! You've answered <b><em>${score}</em></b> out of <b><em>${numOfQuestions}</em></b> questions correctly.`;
     document.querySelector('body').append(scoreEl);
 }
@@ -1291,7 +1292,7 @@ function nextQuestion() {
     } else if (position == numOfQuestions) {
         clearQuestions();
         let grade = score/numOfQuestions*100;
-        let gradeRnd = Math.round(grade);     
+        let gradeRnd = Math.round(grade);          
         scoreEl.innerHTML = `You've answered <b><em>${score}</em></b> out of <b><em>${numOfQuestions}</em></b> questions correctly.<br><br>That's ${gradeRnd}% correct!`;
         scoreEl.classList = 'congrats-msg'
         homeDivEl.append(scoreEl);
@@ -1329,12 +1330,12 @@ function reload(){
 
 // creates and plays clapping audio
 function clap(){
-    audio.setAttribute("src", "./clap.mp3");
+    audio.setAttribute("src", "./files/clap.mp3");
     return audio.play();
 }
 
 // creates and plays booing audio
 function boo(){
-    audio.setAttribute("src", "./boo.mp3");
+    audio.setAttribute("src", "./files/boo.mp3");
     return audio.play();
 }
