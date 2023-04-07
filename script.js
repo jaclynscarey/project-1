@@ -1173,8 +1173,8 @@ function invalidInput() {
 // shuffles all questions in questionsBank array
 function randomize(randomQuestions) {
     for (let i = questionsBank.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i - 1));
-        [questionsBank[i], questionsBank[j]] = [questionsBank[j], questionsBank[i]];
+        const randomIndex = Math.floor(Math.random() * (i - 1));
+        [questionsBank[i], questionsBank[randomIndex]] = [questionsBank[randomIndex], questionsBank[i]];
     }
     return randomQuestions;
 }
